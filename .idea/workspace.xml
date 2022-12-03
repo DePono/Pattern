@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Написан Singleton">
-      <change afterPath="$PROJECT_DIR$/src/Auto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exeptions/DuplicateModelNameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exeptions/ModelPriceOutOfBoundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exeptions/NoSuchModelNameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Motorcycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TransportFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VehicleStaticClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PropertyReader.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Написан паттерн Factory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,13 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670008046777</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Написан паттерн Factory">
+      <created>1670062377910</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670062377910</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Создан проект" />
     <MESSAGE value="Написан Singleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан Singleton" />
+    <MESSAGE value="Написан паттерн Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написан паттерн Factory" />
   </component>
 </project>
