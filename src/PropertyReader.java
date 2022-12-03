@@ -1,6 +1,8 @@
 import java.io.*;
 import java.util.Properties;
-
+// Создать файл настроек для приложения config.properties (использовать класс java.util.Properties для его чтения).
+// Написать класс с использованием паттерна Singleton, который будет загружать данный файл (один раз) и отдавать экземпляр Properties по запросу.
+// Продемонстрировать работу в методе main() через вывод считанных настроек в консоль.
 public class PropertyReader {
     private static PropertyReader instance = null;
     static Properties properties = null;
