@@ -84,7 +84,7 @@ public class Motorcycle implements Vehicle, Serializable, Cloneable {
             }
     }
 
-    // 5 метод обновления названия модели дописать про дупликат
+    // 5 метод обновления названия модели дописать про дубликат
     public void setModelName(String oldName, String newName) throws DuplicateModelNameException, NoSuchModelNameException {
         if (getModelByName(oldName) != null) {
             if (getModelByName(newName) == null) getModelByName(oldName).modelName = newName;

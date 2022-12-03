@@ -1,5 +1,5 @@
-import IVT.Exeptions.DuplicateModelNameException;
-import IVT.Exeptions.NoSuchModelNameException;
+import Exeptions.DuplicateModelNameException;
+import Exeptions.NoSuchModelNameException;
 
 import java.io.*;
 import java.util.Arrays;
