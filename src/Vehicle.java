@@ -1,5 +1,5 @@
-import IVT.Exeptions.DuplicateModelNameException;
-import IVT.Exeptions.NoSuchModelNameException;
+import Exeptions.DuplicateModelNameException;
+import Exeptions.NoSuchModelNameException;
 //  2 лабораторная работа (только интерфейс)
 public interface Vehicle {
     String getMark();
@@ -12,7 +12,5 @@ public interface Vehicle {
     void addModel(String modelName, double price) throws DuplicateModelNameException;
     void deleteModel(String modelName) throws NoSuchModelNameException;
     int getSizeModelArray();
-    // 3 лабораторная работа
-    // 4 лабораторная работа
     String toString();
 }

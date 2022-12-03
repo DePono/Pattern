@@ -1,6 +1,6 @@
-import IVT.Exeptions.NoSuchModelNameException;
-import IVT.Exeptions.DuplicateModelNameException;
-import IVT.Exeptions.ModelPriceOutOfBoundsException;
+import Exeptions.NoSuchModelNameException;
+import Exeptions.DuplicateModelNameException;
+import Exeptions.ModelPriceOutOfBoundsException;
 
 import java.io.Serializable;
 import java.util.Arrays;

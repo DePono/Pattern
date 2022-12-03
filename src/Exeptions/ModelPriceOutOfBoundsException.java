@@ -1,4 +1,5 @@
-package IVT.Exeptions;
+package Exeptions;
+
 public class ModelPriceOutOfBoundsException extends RuntimeException {
     public ModelPriceOutOfBoundsException(){
         super("Задана неверная цена");

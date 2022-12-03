@@ -1,9 +1,9 @@
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Objects;
-import IVT.Exeptions.NoSuchModelNameException;
-import IVT.Exeptions.DuplicateModelNameException;
-import IVT.Exeptions.ModelPriceOutOfBoundsException;
+import Exeptions.NoSuchModelNameException;
+import Exeptions.DuplicateModelNameException;
+import Exeptions.ModelPriceOutOfBoundsException;
 public class Auto implements Vehicle, Serializable, Cloneable {
     // 1 поле типа String, хранящее марку автомобиля
     private String mark;
