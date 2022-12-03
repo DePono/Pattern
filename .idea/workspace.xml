@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Написан паттерн Factory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motorcycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VehicleStaticClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VehicleStaticClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Внесены изменения в Auto, Motorcycle. Добавлена проверка в main" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670076912799</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Внесены изменения в Auto, Motorcycle. Добавлена проверка в main">
+      <created>1670078506449</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670078506449</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +167,7 @@
     <MESSAGE value="Создан проект" />
     <MESSAGE value="Написан Singleton" />
     <MESSAGE value="Написан паттерн Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан паттерн Factory" />
+    <MESSAGE value="Внесены изменения в Auto, Motorcycle. Добавлена проверка в main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внесены изменения в Auto, Motorcycle. Добавлена проверка в main" />
   </component>
 </project>
