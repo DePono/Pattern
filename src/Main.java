@@ -1,15 +1,9 @@
 import Exeptions.DuplicateModelNameException;
 import Exeptions.NoSuchModelNameException;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.stream.XMLStreamException;
-import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException, DuplicateModelNameException, CloneNotSupportedException,
-            NoSuchModelNameException, ClassNotFoundException, ParserConfigurationException, SAXException,
-            XMLStreamException {
+    public static void main(String[] args) throws DuplicateModelNameException, CloneNotSupportedException,
+            NoSuchModelNameException{
         //---------------------------------ПУНКТ 1.2----------------------------------
         Auto auto = new Auto("ZAZ", 3);
         auto.addModel("ZIZ", 122);
