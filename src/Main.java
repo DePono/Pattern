@@ -1,10 +1,12 @@
 import Exeptions.DuplicateModelNameException;
 import Exeptions.NoSuchModelNameException;
 
+import java.io.IOException;
+
 public class Main {
     public static void main(String[] args) throws DuplicateModelNameException, CloneNotSupportedException,
-            NoSuchModelNameException{
-        //---------------------------------ПУНКТ 1.2----------------------------------
+            NoSuchModelNameException, IOException {
+/*        //---------------------------------ПУНКТ 1.2----------------------------------
         Auto auto = new Auto("ZAZ", 3);
         auto.addModel("ZIZ", 122);
         auto.addModel("ZEZ", 244);
@@ -65,6 +67,14 @@ public class Main {
         for (
                 String str : motorcycleClone.getAllModelNames()) {
             System.out.println(str);
-        }
+        }*/
+
+        //------------------------LAB 2-----------------
+        /*-----------------------------------Adapter--------------------------------------*/
+
+        Adapter adapter = new Adapter();
+        adapter.writeOutputStream("Fabric", "Adapter", "Decorator");
+        adapter.readOutputStream();
+        System.out.println();
     }
 }
