@@ -6,32 +6,23 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws DuplicateModelNameException, CloneNotSupportedException,
             NoSuchModelNameException, IOException {
-/*        //---------------------------------ПУНКТ 1.2----------------------------------
-        Auto auto = new Auto("ZAZ", 3);
-        auto.addModel("ZIZ", 122);
-        auto.addModel("ZEZ", 244);
-
-        MotorcycleFactory motorcycleFactory;
-
-        TransportFactory transportFactory = new MotorcycleFactory();
-        VehicleStaticClass.setTransportFactory(transportFactory);
-        System.out.println(transportFactory.getClass());
-
+        //---------------------------------ПУНКТ 1.2---------------------------------
         TransportFactory transportFactory2 = new AutoFactory();
-        VehicleStaticClass.setTransportFactory(transportFactory2);
-        System.out.println(VehicleStaticClass.createInstance("MNW", 4).getClass());
+        Vehicle auto = transportFactory2.createInstance("BMW",4);
+        System.out.println(auto);
+        auto.addModel("Zoz",233);
 
         for (String str : auto.getAllModelNames()) {
             System.out.println(str);
         }
 
         try {
-            auto.setModelName("ZIZ", "ZOZ");
+            auto.setModelName("BMW0", "ZOZ");
         } catch (DuplicateModelNameException | NoSuchModelNameException e) {
             e.printStackTrace();
         }
 
-        auto.deleteModel("ZEZ");
+        auto.deleteModel("BMW1");
 
         System.out.println("-------------------------------------------------");
 
@@ -39,12 +30,32 @@ public class Main {
             System.out.println(str);
         }
 
-        Auto auto2 = new Auto("Toyota", 2);
 
+        TransportFactory transportFactory = new MotorcycleFactory();
+        Vehicle motorcycle = transportFactory.createInstance("SUZUKI", 4);
+        System.out.println(motorcycle);
+        motorcycle.addModel("Zoz",233);
+        for (String str : motorcycle.getAllModelNames()) {
+            System.out.println(str);
+        }
+
+        try {
+            motorcycle.setModelName("SUZUKI0", "ZOZ");
+        } catch (DuplicateModelNameException | NoSuchModelNameException e) {
+            e.printStackTrace();
+        }
+
+        motorcycle.deleteModel("SUZUKI1");
+
+        System.out.println("-------------------------------------------------");
+
+        for (String str : motorcycle.getAllModelNames()) {
+            System.out.println(str);
+        }
 //---------------------------------ПУНКТ 1.3(clone tests)----------------------------------
 
 
-        Motorcycle motorcycle = new Motorcycle("Kawasaki", 2);
+/*        Motorcycle motorcycle = new Motorcycle("Kawasaki", 2);
         motorcycle.addModel("loop", 333);
         motorcycle.addModel("pool", 444);
         System.out.println(motorcycle);
