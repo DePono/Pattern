@@ -12,5 +12,6 @@ public interface Vehicle {
     void addModel(String modelName, double price) throws DuplicateModelNameException;
     void deleteModel(String modelName) throws NoSuchModelNameException;
     int getSizeModelArray();
+
     String toString();
 }

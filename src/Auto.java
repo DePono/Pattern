@@ -169,7 +169,7 @@ public class Auto implements Vehicle, Serializable, Cloneable {
 
     // 4 лабораторная работа
     public String toString() {
-        /*        StringBuilder sb = new StringBuilder();*/
+                StringBuilder sb = new StringBuilder();
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("Марка ").append(getMark()).append("\n");
         for (int i = 0; i < getAllModelNames().length; i++) {
