@@ -4,21 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Добавлен паттерн Adapter">
-      <change afterPath="$PROJECT_DIR$/src/Chain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClientCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ColumnCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProxyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Row.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RowCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Добавлены паттерны">
+      <change afterPath="$PROJECT_DIR$/Write_to_column" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DAO/DataTypeGetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DAO/Serialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DAO/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/CarFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/ControlPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/FacadeShapes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/FacadeTraffic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/TrafficLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/ChartGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/TableValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Eye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/EyesSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Face.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/FaceComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/LaunchFxGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/LeftEye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/LeftEyebrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Mouth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/MouthSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/NoiseSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Nose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/RightEye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/RightEyebrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Strategy/Analyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Strategy/Dom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Strategy/Sax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Strategy/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Ball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Figure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/FigureAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/LaunchGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Star.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/PrintVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Row.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VehicleStaticClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VehicleStaticClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,21 +88,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pro-m/IdeaProjects/Pattern&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/pro-m/IdeaProjects/Pattern",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Pattern" />
@@ -96,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.PropertyReader" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670149907012</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Добавлены паттерны">
+      <created>1673242612156</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673242612156</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +268,7 @@
     <MESSAGE value="Написан паттерн Factory" />
     <MESSAGE value="Внесены изменения в Auto, Motorcycle. Добавлена проверка в main" />
     <MESSAGE value="Добавлен паттерн Adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен паттерн Adapter" />
+    <MESSAGE value="Добавлены паттерны" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены паттерны" />
   </component>
 </project>

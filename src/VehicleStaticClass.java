@@ -130,6 +130,9 @@ public class VehicleStaticClass {
         }
         return null;
     }
+    public static synchronized Decorator getDecorator(Vehicle vehicle) {
+        return new Decorator(vehicle);
+    }
 }
 
 

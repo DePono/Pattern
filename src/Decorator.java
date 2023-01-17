@@ -2,7 +2,7 @@ import Exeptions.DuplicateModelNameException;
 import Exeptions.NoSuchModelNameException;
 
 public class Decorator implements Vehicle{
-    private Vehicle vehicle;
+    private final Vehicle vehicle;
     public Decorator(Vehicle vehicle) {
         this.vehicle=vehicle;
     }
@@ -18,41 +18,41 @@ public class Decorator implements Vehicle{
 
     @Override
     public synchronized void setModelName(String oldName, String newName) throws DuplicateModelNameException, NoSuchModelNameException {
-
+        vehicle.setModelName(oldName, newName);
     }
 
     @Override
     public synchronized String[] getAllModelNames() {
-        return new String[0];
+        return vehicle.getAllModelNames();
     }
 
     @Override
     public synchronized double getPriceModelByName(String modelName) throws NoSuchModelNameException {
-        return 0;
+        return vehicle.getPriceModelByName(modelName);
     }
 
     @Override
     public synchronized void setPriceModelByName(String modelName, double price) throws NoSuchModelNameException, DuplicateModelNameException {
-
+        vehicle.setPriceModelByName(modelName, price);
     }
 
     @Override
     public synchronized double[] getAllModelPrices() {
-        return new double[0];
+        return vehicle.getAllModelPrices();
     }
 
     @Override
     public synchronized void addModel(String modelName, double price) throws DuplicateModelNameException {
-
+        vehicle.addModel(modelName,price);
     }
 
     @Override
     public synchronized void deleteModel(String modelName) throws NoSuchModelNameException {
-
+        vehicle.deleteModel(modelName);
     }
 
     @Override
     public synchronized int getSizeModelArray() {
-        return 0;
+        return vehicle.getSizeModelArray();
     }
 }

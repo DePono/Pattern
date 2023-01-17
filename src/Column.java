@@ -9,7 +9,7 @@ public class Column implements Chain {
             FileWriter outputStream = new FileWriter("Write_to_column");
 
             for (String string : vehicle.getAllModelNames()) {
-                string+="n";
+                string+=" ";
                 outputStream.write(string);
             }
             outputStream.close();

@@ -1,5 +1,6 @@
 import Exeptions.DuplicateModelNameException;
 import Exeptions.NoSuchModelNameException;
+/*import Visitor.Visitor;*/
 //  2 лабораторная работа (только интерфейс)
 public interface Vehicle {
     String getMark();
@@ -12,6 +13,6 @@ public interface Vehicle {
     void addModel(String modelName, double price) throws DuplicateModelNameException;
     void deleteModel(String modelName) throws NoSuchModelNameException;
     int getSizeModelArray();
-
+/*    void accept(Visitor visitor) throws NoSuchModelNameException;*/
     String toString();
 }
