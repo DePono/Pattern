@@ -208,6 +208,11 @@ public class Motorcycle implements Vehicle, Serializable, Cloneable {
         return size;
     }
 
+    @Override
+    public void accept(Visitor visitor) throws NoSuchModelNameException {
+        visitor.visit(this);
+    }
+
     // 4 лабораторная работа
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();

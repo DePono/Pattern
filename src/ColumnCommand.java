@@ -1,17 +1,19 @@
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Serializable;
 
-public class ColumnCommand implements Command, Serializable{
-    public void write_to_file(Auto auto, OutputStream outputStream) throws IOException {
-        if (outputStream != null) {
+public class ColumnCommand implements Command, Serializable {
+    public void write_to_file(Auto auto, FileWriter fileWriter) throws IOException {
+        if (fileWriter != null) {
             for (String string : auto.getAllModelNames()) {
-                string+="/n";
-                byte[] buffer = string.getBytes();
-                outputStream.write(buffer);
+                string += "\n";
+                fileWriter.write(string);
             }
-        } else{
-            System.out.println("Потока нет");
+            fileWriter.close();
+        } else {
+            System.out.println("Поток is gone");
         }
     }
 }
+

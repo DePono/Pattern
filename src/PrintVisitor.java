@@ -1,12 +1,13 @@
-/*
-package Visitor;
+import Exeptions.NoSuchModelNameException;
+
+import java.util.Arrays;
 
 public class PrintVisitor implements Visitor {
 
     @Override
     public void visit(Auto auto) {
         for (int i = 0; i < auto.getSizeModelArray(); i++) {
-            System.out.print(auto.getModelByIndex(i).getModelName() + "  " + car.getModelByIndex(i).getPrice() + "  ");
+            System.out.print(Arrays.toString(auto.getAllModelNames()));
         }
     }
 
@@ -17,4 +18,3 @@ public class PrintVisitor implements Visitor {
         }
     }
 }
-*/

@@ -86,11 +86,11 @@ public class Sax implements Strategy {
         @Override
         public void characters(char[] ch, int start, int length) throws SAXException {
             if (elem.equals("average")) {
-                String str = "";
+                StringBuilder str = new StringBuilder();
                 for (int i = 0; i < length; i++) {
-                    str += ch[start + i];
+                    str.append(ch[start + i]);
                 }
-                avrg = str;
+                avrg = str.toString();
                 //    System.out.println(str);
             }
         }

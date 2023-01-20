@@ -1,13 +1,15 @@
 import Exeptions.DuplicateModelNameException;
 import Exeptions.NoSuchModelNameException;
-import Facade.FacadeTraffic;
-
+import org.xml.sax.SAXException;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.stream.XMLStreamException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 
 public class Main {
-    public static void main(String[] args) throws DuplicateModelNameException, NoSuchModelNameException, IOException, CloneNotSupportedException, InterruptedException, ClassNotFoundException {
+    public static void main(String[] args) throws DuplicateModelNameException, NoSuchModelNameException, IOException, CloneNotSupportedException, InterruptedException, ClassNotFoundException, XMLStreamException, ParserConfigurationException, SAXException {
        /* TransportFactory transportFactory2 = new AutoFactory();
         Vehicle auto = transportFactory2.createInstance("BMW",4);
         System.out.println(auto.getClass());
@@ -83,13 +85,13 @@ public class Main {
         //Лабораторная 3
         //Adapter
 
-        Adapter adapter = new Adapter();
+/*        Adapter adapter = new Adapter();
         adapter.writeOutputStream("Fabric", "Adapter", "Decorator");
         adapter.readOutputStream();
-        System.out.println();
+        System.out.println();*/
 
         //Decorator
-
+/*
         Vehicle auto = new Auto("Polo", 2);
         auto.addModel("Lookok", 320);
         auto.addModel("Plooo", 920);
@@ -98,7 +100,7 @@ public class Main {
         Decorator decorator = VehicleStaticClass.getDecorator(auto);
         for (String carName : decorator.getAllModelNames()) {
             System.out.println(carName);
-        }
+        }*/
 
         // Facade
 /*        FacadeTraffic.runTrafficJam();
@@ -108,89 +110,93 @@ public class Main {
         //Лабораторная 3
 
 
-        //Chain of Responsibility
+        //ChainsOfResponsobility.Chain of Responsibility
 
-/*        Vehicle vehicleCar = new Auto("Nooo", 5);
-*//*        vehicleCar.addModel("Eyyyyc", 32);
-        vehicleCar.addModel("Ooop", 92);
-        vehicleCar.addModel("Kolk", 73);*//*
-        //vehicleCar.addModel("Teana", 1550000);
+/*        Vehicle auto = new Auto("Nooo", 6);
+        auto.addModel("Eyyyyc", 32);
+        auto.addModel("Ooop", 92);
+        auto.addModel("Kolk", 73);
 
         Chain chain1 = new Row();
         Chain chain2 = new Column();
 
         chain2.set_next_chain(chain1);
-        chain2.write_to_file(vehicleCar);
+        chain2.write_to_file(auto);*/
 
 
         //Command 3.2
-
-        OutputStream outputStream = new FileOutputStream("WriteCommandOutput.txt");
-        Auto carCommand = new Auto("Toyota", 2);
-        carCommand.addModel("Chaiser", 120);
-        carCommand.addModel("Corolla", 100);
-        carCommand.setPrintCommand(new ColumnCommand());
-        carCommand.print(outputStream);
+/*
+        FileWriter fileWriter = new FileWriter("WriteRow.txt");
+        FileWriter fileWriter1 = new FileWriter("WriteColumn.txt");
+        Auto autoCommand = new Auto("Toyota", 8);
+        autoCommand.setPrintCommand(new ColumnCommand());
+        autoCommand.print(fileWriter1);
+        autoCommand.setPrintCommand(new RowCommand());
+        autoCommand.print(fileWriter);*/
 
         //Iterator 3.3
 
-        Auto car = new Auto("Toyota", 3);
-        Auto.AutoIterator iterator = car.iterator();
-        car.addModel("Chaiser", 1200000);
-        car.addModel("Corolla", 1000000);
-        car.addModel("Camry", 2500000);
+/*        Auto auto = new Auto("Toyota", 3);
+        Auto.AutoIterator iterator = auto.iterator();
+        auto.addModel("Cha", 12);
+        auto.addModel("olla", 100);
+        auto.addModel("Cary", 2500);
 
 
         while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+            System.out.println(iterator.next());*/
 
-            //Memento 3.4
+            //Memento 3.4 переделать. чтобы один вызывал getMemento
 
 
             Auto auto = new Auto("Toyota", 2);
-            car.addModel("Chaser", 1200000);
-            car.addModel("Corolla", 1000000);
+            auto.addModel("Chaser", 120);
+            auto.addModel("Corolla", 100);
 
 
             Auto.Memento memento = auto.createMemento();
             auto.setMemento(memento);
 
-            auto.addModel("Camry", 2500000);
-            auto.addModel("Land Cruiser", 5000000);
+            auto.addModel("Camry", 250);
+            auto.addModel("Land Cruiser", 500);
 
             for (String modelName : auto.getAllModelNames()) {
                 System.out.println(modelName);
             }
 
+            auto.deleteModel("Corolla");
+        for (String modelName : auto.getAllModelNames()) {
+            System.out.println(modelName);
+        }
+
             System.out.println("Memento");
-            for (int i = 0; i < memento.getCar().getSizeModelArray(); i++) {
-                System.out.println(memento.getCar().getModelByIndex(i).toString());
-            }*/
+            for (int i = 0; i < Auto.Memento.getAuto().getSizeModelArray(); i++) {
+                System.out.println(Auto.Memento.getAuto().getModelByIndex(i));
+            }
 
-            /*Strategy 3.7
+            //Strategy 3.7
 
-//        Analyzer analyzer = new Analyzer();
-//        analyzer.setStrategy(new Sax(args[0], args[1]));
-//        analyzer.documentParse();
+/*        Analyzer analyzer = new Analyzer();
+        analyzer.setStrategy(new Sax(args[0], args[1]));
+        analyzer.documentParse();
 
-//        Analyzer analyzer = new Analyzer();
-//        analyzer.setStrategy(new Dom(args[0], args[1]));
-//        analyzer.documentParse();
-
-
-            /*Visitor 3.8
-//        Visitor visitor = new PrintVisitor();
-//        Vehicle vehicle = new Motorcycle("Honda",3);
-//        vehicle.addModel("Aaa", 175);
-//        vehicle.addModel("Bbb", 174);
-//        vehicle.addModel("Ccc", 791);
-//        vehicle.accept(visitor);
+        Analyzer analyzer = new Analyzer();
+        analyzer.setStrategy(new Dom(args[0], args[1]));
+        analyzer.documentParse();*/
 
 
+            //Visitor 3.9 не то. проверить задание
+/*        Visitor visitor = new PrintVisitor();
+        Vehicle vehicle = new Motorcycle("Honda",3);
+        vehicle.addModel("Aaa", 175);
+        vehicle.addModel("Bbb", 174);
+        vehicle.addModel("Ccc", 791);
+        vehicle.accept(visitor);*/
 
-            /*DAO 4.2
+
+            //DAO 4.2
 /*            Auto auto = new Auto("Ddd", 3);
-            car.defaultInit();
+            auto.defaultInit();
 
 
             DataTypeGetting file = new Text();
@@ -199,3 +205,4 @@ public class Main {
             file.print();*/
         }
     }
+

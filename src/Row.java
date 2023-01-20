@@ -1,3 +1,4 @@
+
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -8,7 +9,7 @@ public class Row implements Chain {
         if (vehicle.getSizeModelArray()<=3){
             FileWriter outputStream = new FileWriter("write_to_row");
             for (String string: vehicle.getAllModelNames()){
-                outputStream.write(string + " ");
+                outputStream.write(string + ",");
             }
             outputStream.close();
         }

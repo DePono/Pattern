@@ -1,3 +1,4 @@
+
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -9,7 +10,7 @@ public class Column implements Chain {
             FileWriter outputStream = new FileWriter("Write_to_column");
 
             for (String string : vehicle.getAllModelNames()) {
-                string+=" ";
+                string+="\n";
                 outputStream.write(string);
             }
             outputStream.close();

@@ -30,7 +30,6 @@ public class Dom implements Strategy{
         try {
             DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
             Document document = (Document) documentBuilder.parse(inputXml);
-
             NodeList nodeList = document.getElementsByTagName("student");
             Node node = nodeList.item(0);
             NodeList children = node.getChildNodes();

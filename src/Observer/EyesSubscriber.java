@@ -1,6 +1,6 @@
 /*
 package Observer;
-
+import Observer.LeftEye;
 public class EyesSubscriber implements Observer{
     @Override
     public void handleEvent(Object component) {

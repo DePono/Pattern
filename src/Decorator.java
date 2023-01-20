@@ -55,4 +55,9 @@ public class Decorator implements Vehicle{
     public synchronized int getSizeModelArray() {
         return vehicle.getSizeModelArray();
     }
+
+    @Override
+    public void accept(Visitor visitor) throws NoSuchModelNameException {
+
+    }
 }

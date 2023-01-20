@@ -4,6 +4,7 @@ import java.util.Objects;
 import Exeptions.NoSuchModelNameException;
 import Exeptions.DuplicateModelNameException;
 import Exeptions.ModelPriceOutOfBoundsException;
+
 public class Auto implements Vehicle, Serializable, Cloneable {
     // 1 поле типа String, хранящее марку автомобиля
     private String mark;
@@ -56,6 +57,9 @@ public class Auto implements Vehicle, Serializable, Cloneable {
         public Model clone() throws CloneNotSupportedException {
             Model clone = (Model) super.clone();
             return new Model(ModelName, ModelPrice);
+        }
+        public String toString() {
+            return ModelName + "  " + ModelPrice;
         }
     }
 
@@ -169,19 +173,12 @@ public class Auto implements Vehicle, Serializable, Cloneable {
         return ModelArray.length;
     }
 
-    // 4 лабораторная работа
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("Марка ").append(getMark()).append("\n");
-        for (int i = 0; i < getAllModelNames().length; i++) {
-            stringBuffer.append("Модель ").append(getAllModelNames()[i]).append("\n");
-        }
-        for (int i = 0; i < getAllModelPrices().length; i++) {
-            stringBuffer.append("Цена модели ").append(getAllModelPrices()[i]).append("\n");
-        }
-        return stringBuffer.toString();
+    @Override
+    public void accept(Visitor visitor) throws NoSuchModelNameException {
+        visitor.visit(this);
     }
+
+    // 4 лабораторная работа
 
 
     @Override
@@ -205,11 +202,12 @@ public class Auto implements Vehicle, Serializable, Cloneable {
     }
 
     public void setPrintCommand(Command command) {
+        this.command = command;
     }
 
-    public void print(OutputStream outputStream) throws IOException {
+    public void print(FileWriter fileWriter) throws IOException {
         if (this.command != null) {
-            command.write_to_file(this, outputStream);
+            command.write_to_file(this, fileWriter);
         } else {
             System.out.println("Команда не задана");
         }
@@ -255,27 +253,21 @@ public class Auto implements Vehicle, Serializable, Cloneable {
 
     public static class Memento implements Serializable {
 
-        private ByteArrayOutputStream state = new ByteArrayOutputStream(64);
-        private Auto auto = new Auto("Poooo", 23);
+        private static final ByteArrayOutputStream state = new ByteArrayOutputStream(64);
 
 
-        public Memento(Auto auto) throws IOException, ClassNotFoundException {
-            this.auto = auto;
-            setAuto();
-        }
-
-        public void setAuto() throws IOException, ClassNotFoundException {
+        public static void setAuto(Auto auto) throws IOException {
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(state);
             objectOutputStream.writeObject(auto);
             state.close();
             objectOutputStream.close();
         }
 
-        public ByteArrayOutputStream getAuto() {
-            return this.state;
+        public ByteArrayOutputStream getCar() {
+            return state;
         }
 
-        public Auto getCar() throws IOException, ClassNotFoundException {
+        public static Auto getAuto() throws IOException, ClassNotFoundException {
             byte[] buffer = state.toByteArray();
             ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(buffer);
             ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
@@ -286,13 +278,14 @@ public class Auto implements Vehicle, Serializable, Cloneable {
         }
     }
 
-        public Memento createMemento() throws IOException, ClassNotFoundException {
-            return new Memento(this);
-        }
 
-        public void setMemento(Memento memento) throws IOException, ClassNotFoundException {
-            memento.setAuto();
-        }
+    public Memento createMemento() throws IOException {
+        Memento.setAuto(this);
+        return null;
+    }
+    public Auto setMemento(Memento memento) throws IOException, ClassNotFoundException {
+        return Memento.getAuto();
+    }
     public Model getModelByIndex(int i) {
         return ModelArray[i];
     }
