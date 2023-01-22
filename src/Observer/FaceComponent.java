@@ -1,12 +1,9 @@
-/*
 package Observer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
-import java.util.Observer;
 
-public class FaceComponent implements Observer {
+public class FaceComponent implements Observed {
     private List<Observer> observers = new ArrayList<>();
 
     public FaceComponent() {}
@@ -31,4 +28,3 @@ public class FaceComponent implements Observer {
 
 }
 
-*/

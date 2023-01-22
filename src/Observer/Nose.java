@@ -1,6 +1,7 @@
 /*
 package Observer;
-
+import javax.swing.*;
+import java.awt.*;
 public class Nose {
     private Ellipse ellipse;
     private double faceCenterX;

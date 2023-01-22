@@ -1,6 +1,7 @@
 /*
 package Observer;
-
+import javax.swing.*;
+import java.awt.*;
 public class Mouth {
     private Arc mouth = null;//(220,310,80,60,0,180);
     private double faceCenterX;

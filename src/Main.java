@@ -1,5 +1,7 @@
 import Exeptions.DuplicateModelNameException;
 import Exeptions.NoSuchModelNameException;
+import Strategy.Analyzer;
+import Strategy.Sax;
 import org.xml.sax.SAXException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLStreamException;
@@ -7,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws DuplicateModelNameException, NoSuchModelNameException, IOException, CloneNotSupportedException, InterruptedException, ClassNotFoundException, XMLStreamException, ParserConfigurationException, SAXException {
@@ -146,33 +149,25 @@ public class Main {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());*/
 
-            //Memento 3.4 переделать. чтобы один вызывал getMemento
+            //Memento 3.4
 
 
             Auto auto = new Auto("Toyota", 2);
             auto.addModel("Chaser", 120);
-            auto.addModel("Corolla", 100);
+            System.out.println(auto);
 
+            auto.createMemento();
+//            auto.setMemento(memento);
 
-            Auto.Memento memento = auto.createMemento();
-            auto.setMemento(memento);
-
-            auto.addModel("Camry", 250);
             auto.addModel("Land Cruiser", 500);
 
             for (String modelName : auto.getAllModelNames()) {
                 System.out.println(modelName);
             }
 
-            auto.deleteModel("Corolla");
-        for (String modelName : auto.getAllModelNames()) {
-            System.out.println(modelName);
-        }
-
+            auto.setMemento();
             System.out.println("Memento");
-            for (int i = 0; i < Auto.Memento.getAuto().getSizeModelArray(); i++) {
-                System.out.println(Auto.Memento.getAuto().getModelByIndex(i));
-            }
+            System.out.println(Arrays.toString(auto.setMemento().getAllModelNames()));
 
             //Strategy 3.7
 
@@ -180,18 +175,19 @@ public class Main {
         analyzer.setStrategy(new Sax(args[0], args[1]));
         analyzer.documentParse();
 
-        Analyzer analyzer = new Analyzer();
+        Analyzer analyzer1 = new Analyzer();
         analyzer.setStrategy(new Dom(args[0], args[1]));
         analyzer.documentParse();*/
 
 
-            //Visitor 3.9 не то. проверить задание
+            //Visitor 3.9
 /*        Visitor visitor = new PrintVisitor();
         Vehicle vehicle = new Motorcycle("Honda",3);
-        vehicle.addModel("Aaa", 175);
-        vehicle.addModel("Bbb", 174);
-        vehicle.addModel("Ccc", 791);
+        Vehicle vehicle1 = new Auto("Lada",3);
+        vehicle1.accept(visitor);
+        System.out.println("\n------------");
         vehicle.accept(visitor);*/
+
 
 
             //DAO 4.2

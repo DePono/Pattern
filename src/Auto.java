@@ -279,11 +279,10 @@ public class Auto implements Vehicle, Serializable, Cloneable {
     }
 
 
-    public Memento createMemento() throws IOException {
+    public void createMemento() throws IOException {
         Memento.setAuto(this);
-        return null;
     }
-    public Auto setMemento(Memento memento) throws IOException, ClassNotFoundException {
+    public Auto setMemento () throws IOException, ClassNotFoundException {
         return Memento.getAuto();
     }
     public Model getModelByIndex(int i) {

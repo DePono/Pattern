@@ -1,6 +1,7 @@
 /*
 package Observer;
-
+import javax.swing.*;
+import java.awt.*;
 public class MouthSubscriber implements Observer{
     private Mouth mouth;
 

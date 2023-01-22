@@ -30,11 +30,12 @@ public class Dom implements Strategy{
         try {
             DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
             Document document = (Document) documentBuilder.parse(inputXml);
+            document.getDo
             NodeList nodeList = document.getElementsByTagName("student");
             Node node = nodeList.item(0);
             NodeList children = node.getChildNodes();
 
-            double sum, count, real, defaultAverage = 0.0;
+            double sum = 0, count = 0, real, defaultAverage = 0.0;
             NamedNodeMap namedNodeMap;
             Node cur;
 

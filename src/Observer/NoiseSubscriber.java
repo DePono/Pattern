@@ -1,6 +1,7 @@
 /*
 package Observer;
-
+import javax.swing.*;
+import java.awt.*;
 public class NoiseSubscriber implements Observer{
     private Nose nose;
 

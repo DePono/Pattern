@@ -1,6 +1,8 @@
 /*
 package Observer;
 import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.Graphics;
 public class LaunchFxGui extends Application {
     @Override

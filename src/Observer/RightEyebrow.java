@@ -1,6 +1,11 @@
 /*
 package Observer;
-
+import javax.swing.*;
+import java.awt.*;
+import javafx.event.EventHandler;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 public class RightEyebrow {
     private Line rightEyeBrow = new Line();
 

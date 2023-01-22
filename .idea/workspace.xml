@@ -4,30 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Добавлены паттерны">
-      <change afterPath="$PROJECT_DIR$/WriteColumn.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WriteRow.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor.java" afterDir="false" />
+    <list default="true" id="ba994314-d476-49b0-8b40-848801e4b500" name="Changes" comment="Исправлен паттерн Memento">
+      <change afterPath="$PROJECT_DIR$/resources/DOM.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/SAX.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/student.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WriteOutput.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Write_to_column" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ColumnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColumnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motorcycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/Eye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/Eye.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Observer/EyesSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/EyesSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/Face.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/FaceComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/FaceComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Observer/LaunchFxGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/LaunchFxGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Row.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RowCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/LeftEye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/LeftEye.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/LeftEyebrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/LeftEyebrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/Mouth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/Mouth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/MouthSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/MouthSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/NoiseSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/NoiseSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/Nose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/Nose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/RightEyebrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer/RightEyebrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrintVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrintVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Strategy/Dom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strategy/Dom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/Sax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strategy/Sax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/PrintVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Visitor.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +93,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Pattern" />
+      <option name="PROGRAM_PARAMETERS" value="studwnt.xml DOM.xml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,6 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.PropertyReader" />
+      <item itemvalue="Application.Server" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -229,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673942977508</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Исправлен паттерн Memento">
+      <created>1674212642799</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674212642799</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +263,7 @@
     <MESSAGE value="Внесены изменения в Auto, Motorcycle. Добавлена проверка в main" />
     <MESSAGE value="Добавлен паттерн Adapter" />
     <MESSAGE value="Добавлены паттерны" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены паттерны" />
+    <MESSAGE value="Исправлен паттерн Memento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен паттерн Memento" />
   </component>
 </project>

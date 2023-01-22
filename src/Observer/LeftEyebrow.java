@@ -1,6 +1,7 @@
 /*
 package Observer;
-
+import javax.swing.*;
+import java.awt.*;
 public class LeftEyebrow {
     private Line leftEyebrow = new Line();
 

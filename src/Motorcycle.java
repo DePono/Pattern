@@ -25,7 +25,7 @@ public class Motorcycle implements Vehicle, Serializable, Cloneable {
 
 
     //4 внутренний класс Модель, имеющий поля название модели (уникальное) и её цену, а также конструктор (класс Мотоцикл хранит список Моделей)
-    private class Model implements Serializable, Cloneable {
+    public class Model implements Serializable, Cloneable {
         private String modelName;
         private double price;
         Model prev = null;
